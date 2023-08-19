@@ -31,6 +31,8 @@ const getAppointment = async (req, res) => {
     if (!appointment) {
         return res.status(404).json({ error: 'cannot find appointment' })
     }
+
+    res.status(200).json(appointment)
 }
 
 const editAppointment = async (req, res) => {
