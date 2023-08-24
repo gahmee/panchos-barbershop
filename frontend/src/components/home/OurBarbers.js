@@ -4,7 +4,7 @@ const OurBarbers = () => {
         <div id="our-barbers-section">
             <h2>Our Barbers</h2>
 
-            <p>At our salon, we understand that finding the right barber is a personal journey. That's why we've assembled a team of three exceptional barbers, each with their own unique skills, personalities, and specialties. Explore their profiles below and discover the perfect match for your grooming needs.</p>
+            <p id="our-barbers-description">At our salon, we understand that finding the right barber is a personal journey. That's why we've assembled a team of three exceptional barbers, each with their own unique skills, personalities, and specialties. Explore their profiles below and discover the perfect match for your grooming needs.</p>
 
             <div id="barbers-container">
                 <div className="barber-card">
