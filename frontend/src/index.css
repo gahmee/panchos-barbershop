@@ -13,11 +13,10 @@ code {
     monospace;
 }
 
+/* NAVBAR */
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   width: 100%;
   height: 10%;
@@ -25,47 +24,62 @@ code {
   background-color: #FFFFFF;
 }
 
-#home-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Sedgwick Ave Display', 'cursive';
-  font-size: 2rem;
-
+.navbar>a,
+a:visited {
+  text-decoration: none;
+  color: rgb(32, 32, 32);
 }
 
-#nav-buttons {
+.nav-buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#section-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   font-size: 2rem;
+  margin-right: auto;
 }
+
+#home-button>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sedgwick Ave Display', 'cursive';
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
 
 #appointment-buttons {
   width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 #book-appointment-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
-  height: 45%;
+  width: 200px;
+  height: 50px;
   background-color: #f8ce73;
   border: solid 1px black;
   border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
 }
 
-.navbar>a,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
+/* WELCOME SECTION */
 #welcome-section {
   background-color: rgb(214, 214, 214);
-  background-image: url('../public/images/welcome-backdrop.jpg');
+  background-image: url('../src/images/welcome-backdrop.jpg');
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -74,16 +88,18 @@ a:visited {
   justify-content: center;
 }
 
-
 #panchos-description {
   width: 80%;
   text-align: right;
   font-size: 4rem;
-
+  color: rgb(32, 32, 32);
 }
 
+
+/* SERVICES SECTION */
+
 #our-services-section {
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(26, 26, 26);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -92,18 +108,61 @@ a:visited {
   justify-content: center;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave Display', 'cursive';
+  color: #f8ce73;
+}
+
+#our-services-description {
+  width: 60%;
+  color: #e6e6e6;
+  padding: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
 #services-card-container {
   display: flex;
-  gap: 30px;
+  width: 90%;
+  gap: 50px;
 }
 
 .service-card {
-  display: flex;
-  width: 500px;
-  height: 500px;
-
-  background-color: blue;
+  position: relative;
+  width: 33%;
+  height: 100%;
 }
+
+.service-card>img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+
+
+.service-name {
+  position: absolute;
+  font-size: 10rem;
+  writing-mode: sideways-lr;
+  bottom: 35%;
+  text-overflow: upright;
+  color: #e6e6e6;
+  text-shadow: 5px 5px 5px black;
+}
+
+.service-price {
+  font-size: 5rem;
+  text-align: center;
+  color: #f8ce73;
+}
+
+
+/* BARBERS SECTION */
 
 #our-barbers-section {
   background-color: rgb(80, 80, 80);

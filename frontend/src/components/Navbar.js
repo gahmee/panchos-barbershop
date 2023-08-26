@@ -3,19 +3,23 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
     return (
         <div className="navbar">
-            <div id="nav-buttons">
+            <div className="nav-buttons" id="section-buttons">
                 <div>Services</div>
                 -
                 <div>Barbers</div>
                 -
                 <div>Products</div>
             </div>
-            <div id="home-button">
+            <div className="nav-buttons" id="home-button">
                 <Link to="/" ><h1>Pancho's</h1></Link>
             </div>
-            <Link id="book-appointment-button">
-                BOOK NOW
-            </Link>
+            <div className="nav-buttons" id="appointment-buttons">
+                <button id="book-appointment-button">
+                    <Link>
+                        BOOK NOW
+                    </Link>
+                </button>
+            </div>
             {/* <div>
                 <Link to="/login" >Login</Link>
                 <Link to="/signup" >Sign Up</Link>
