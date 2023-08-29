@@ -5,7 +5,7 @@ import shave from '../../images/shave.jpg'
 const OurServices = () => {
     return (
         <div id="our-services-section">
-            <div className='section-title'>
+            <div id='our-services-section-title'>
                 Our Services
             </div>
 
