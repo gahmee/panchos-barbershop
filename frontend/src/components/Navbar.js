@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link to="/" ><h1>Pancho's</h1></Link>
             </div>
             <div className="nav-buttons" id="appointment-buttons">
-                <button id="book-appointment-button">
+                <button className="book-appointment-button">
                     <Link>
                         BOOK NOW
                     </Link>
