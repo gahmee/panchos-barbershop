@@ -1,41 +1,34 @@
 const Footer = () => {
     return (
         <div id="footer">
-            <div id="social-container">TWITTER FACEBOOK INSTAGRAM THREADS</div>
+            <div id="business-info-container">
+                <div>
+                    421 Thomas Rd.
+                    Mahopac, NY 10541
+                </div>
+                <div>
+                    1-(716)-432-1012
+                </div>
+            </div>
             <div id="business-hours-container">
-                <table id="days-container">
+                <table>
                     <tr>
-                        <td>SUNDAY</td>
-                        <td>CLOSED</td>
+                        <td>monday - friday</td>
+                        <td>9am - 5pm</td>
                     </tr>
                     <tr>
-                        <td>MONDAY</td>
-                        <td>9AM - 5PM</td>
+                        <td>saturday</td>
+                        <td>9am - 2pm</td>
                     </tr>
                     <tr>
-                        <td>TUESDAY</td>
-                        <td>9AM - 5PM</td>
-                    </tr>
-                    <tr>
-                        <td>WEDNESDAY</td>
-                        <td>9AM - 5PM</td>
-                    </tr>
-                    <tr>
-                        <td>THURSDAY</td>
-                        <td>9AM - 5PM</td>
-                    </tr>
-                    <tr>
-                        <td>FRIDAY</td>
-                        <td>9AM - 5PM</td>
-                    </tr>
-                    <tr>
-                        <td>SATURDAY</td>
-                        <td>9AM - 5PM</td>
+                        <td>sunday</td>
+                        <td>9am - 2pm</td>
                     </tr>
                 </table>
             </div>
-            <div id="location-container">421 Thomas Rd.
-                Mahopac, NY 10541</div>
+            <div id="social-container">
+                FOLLOW US [INSTAGRAM]
+            </div>
 
         </div>
     )
