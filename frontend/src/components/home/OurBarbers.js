@@ -45,7 +45,7 @@ const OurBarbers = ({ isDesktop }) => {
     }
 
     const handleSelectPreviousBarber = () => {
-        if (barber < 1) {
+        if (barber <= 0) {
             setBarber(barbers.length - 1)
         } else {
             setBarber(barber - 1)
@@ -60,7 +60,7 @@ const OurBarbers = ({ isDesktop }) => {
                 <div id="barbers-container">
 
                     {isDesktop && barbers.map((barber) =>
-                        <BarberCard name={barber.name} picture={barber.picture} description={barber.description} />
+                        <BarberCard isDesktop={isDesktop} name={barber.name} picture={barber.picture} description={barber.description} />
                     )}
                     {!isDesktop &&
                         <div>

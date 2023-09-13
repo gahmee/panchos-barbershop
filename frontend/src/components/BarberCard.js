@@ -1,14 +1,14 @@
 import React from 'react'
 
-const BarberCard = ({ handleSelectPreviousBarber, handleSelectBarber, name, picture, description }) => {
+const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber, name, picture, description }) => {
     return (
         <div>
             <h3 className="barber-name">{name}</h3>
             <div className="barber-container">
-                <div>
-                    <button onClick={() => handleSelectPreviousBarber()}>{`<`}</button>
+                <div className="barber-header">
+                    {!isDesktop && <button className="barber-select-button" onClick={() => handleSelectPreviousBarber()}>{`<`}</button>}
                     <img className="barber-picture" src={picture}></img>
-                    <button onClick={() => handleSelectBarber()}>{`>`}</button>
+                    {!isDesktop && <button className="barber-select-button" onClick={() => handleSelectBarber()}>{`>`}</button>}
                 </div>
                 <div className="barber-description">
                     <div>
