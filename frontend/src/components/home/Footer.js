@@ -2,6 +2,7 @@ const Footer = () => {
     return (
         <div id="footer">
             <div id="business-info-container">
+                <div className="footer-info-title">LOCATION</div>
                 <div>
                     421 Thomas Rd.
                     Mahopac, NY 10541
@@ -11,6 +12,7 @@ const Footer = () => {
                 </div>
             </div>
             <div id="business-hours-container">
+                <div className="footer-info-title">HOURS</div>
                 <table>
                     <tr>
                         <td>monday - friday</td>
@@ -25,6 +27,7 @@ const Footer = () => {
                         <td>9am - 2pm</td>
                     </tr>
                 </table>
+
             </div>
             <div id="social-container">
                 FOLLOW US [INSTAGRAM]
