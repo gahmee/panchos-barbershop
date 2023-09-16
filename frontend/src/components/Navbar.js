@@ -4,22 +4,22 @@ const Navbar = ({ isDesktop }) => {
 
     return (
         <div className="navbar">
-            <div className="nav-buttons" id="section-buttons">
-                <div>Services</div>
-                -
-                <div>Barbers</div>
-                -
-                <div>Products</div>
-            </div>
+            <ul className="nav-buttons" id="section-buttons">
+                <li> <a href="#our-services-section">Services</a></li>
+                <li><a href="#our-barbers-section">Barbers</a></li>
+                <li><a href="#products-section">Products</a></li>
+            </ul>
             <div className="nav-buttons" id="home-button">
                 <Link to="/" ><h1>Pancho's</h1></Link>
             </div>
             {isDesktop && <div className="nav-buttons" id="appointment-buttons">
-                <button className="book-appointment-button">
-                    <Link>
+
+                <a href="#our-barbers-section">
+                    <button className="book-appointment-button">
                         BOOK NOW
-                    </Link>
-                </button>
+                    </button>
+                </a>
+
             </div>}
             {/* <div>
                 <Link to="/login" >Login</Link>
