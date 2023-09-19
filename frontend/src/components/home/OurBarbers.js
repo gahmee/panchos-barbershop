@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import BarberCard from '../BarberCard'
+import { motion } from "framer-motion"
 
 import barberOnePicture from '../../images/barbers/barber.jpg'
 import barberTwoPicture from '../../images/barbers/barber2.jpg'
@@ -60,12 +61,23 @@ const OurBarbers = ({ isDesktop }) => {
                 <div id="barbers-container">
 
                     {isDesktop && barbers.map((barber) =>
-                        <BarberCard isDesktop={isDesktop} name={barber.name} picture={barber.picture} description={barber.description} />
+                        <BarberCard
+                            isDesktop={isDesktop}
+                            name={barber.name}
+                            picture={barber.picture}
+                            description={barber.description}
+                        />
                     )}
                     {!isDesktop &&
-                        <div>
-                            <BarberCard handleSelectBarber={handleSelectBarber} handleSelectPreviousBarber={handleSelectPreviousBarber} name={barbers[barber].name} picture={barbers[barber].picture} description={barbers[barber].description} />
-                        </div>}
+
+                        <BarberCard
+                            handleSelectBarber={handleSelectBarber}
+                            handleSelectPreviousBarber={handleSelectPreviousBarber}
+                            name={barbers[barber].name}
+                            picture={barbers[barber].picture}
+                            description={barbers[barber].description}
+                        />
+                    }
 
                 </div>
             </div>

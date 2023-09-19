@@ -1,8 +1,13 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber, name, picture, description }) => {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0, y: 250 }}
+            whileInView={{ opacity: 1, y: 0 }}
+
+        >
             <h3 className="barber-name">{name}</h3>
             <div className="barber-container">
                 <div className="barber-header">
@@ -22,7 +27,7 @@ const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber,
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

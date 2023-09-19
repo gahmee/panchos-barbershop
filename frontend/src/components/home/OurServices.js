@@ -1,6 +1,8 @@
 import hairdye from '../../images/hair-dye.jpg'
 import haircut from '../../images/haircut.jpg'
 import shave from '../../images/shave.jpg'
+import { motion } from "framer-motion"
+
 
 const OurServices = () => {
     return (
@@ -14,21 +16,21 @@ const OurServices = () => {
             </div>
 
             <div id="services-card-container">
-                <div className="service-card">
+                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .3, duration: 1 } }} className="service-card">
                     <img src={haircut} alt="haircut"></img>
                     <div className='service-name'>HAIRCUT</div>
                     <div className='service-price'>$60</div>
-                </div>
-                <div className="service-card">
+                </motion.div >
+                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .6, duration: 1 } }} className="service-card">
                     <img src={hairdye} alt="haircut"></img>
                     <div className='service-name'>HAIR DYE</div>
                     <div className='service-price'>$80</div>
-                </div>
-                <div className="service-card">
+                </motion.div >
+                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .9, duration: 1 } }} className="service-card">
                     <img src={shave} alt="haircut"></img>
                     <div className='service-name'>SHAVE</div>
                     <div className='service-price'>$20</div>
-                </div>
+                </motion.div >
             </div>
 
         </div>
