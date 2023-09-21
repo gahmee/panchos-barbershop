@@ -26,10 +26,10 @@ const barbers = [
     {
         name: 'CARLOS RAMIREZ',
         picture: barberThreePicture,
-        description: `For those who appreciate the finer things in life, Barber C offers a grooming experience fit for a modern gentleman. 
-        With an emphasis on relaxation, precision, and unparalleled service, Barber C delivers meticulously crafted haircuts, beard trims, and classic straight razor shaves. 
+        description: `For those who appreciate the finer things in life, Carlos offers a grooming experience fit for a modern gentleman. 
+        With an emphasis on relaxation, precision, and unparalleled service, Carlos delivers meticulously crafted haircuts, beard trims, and classic straight razor shaves. 
         From the moment you step into their chair, you'll be transported to a world of luxury and refinement. 
-        Elevate your grooming routine with Barber C's expert touch. `
+        Elevate your grooming routine with Carlos's expert touch. `
     }
 ]
 

@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber, name, picture, description }) => {
     return (
         <motion.div
+            viewport={{ once: true }}
             initial={{ opacity: 0, y: 250 }}
             whileInView={{ opacity: 1, y: 0 }}
 

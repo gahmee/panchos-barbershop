@@ -24,7 +24,7 @@ const Footer = () => {
                     </tr>
                     <tr>
                         <td>sunday</td>
-                        <td>9am - 2pm</td>
+                        <td>closed</td>
                     </tr>
                 </table>
 

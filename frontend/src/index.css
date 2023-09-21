@@ -6,6 +6,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -20,10 +21,11 @@ code {
   position: fixed;
   width: 100%;
   height: 100px;
+  z-index: 1;
   color: rgb(32, 32, 32);
   background-color: #FFFFFF;
   overflow: hidden;
-  z-index: 1;
+  letter-spacing: 2px;
 }
 
 
@@ -55,17 +57,19 @@ a:visited {
 
 
 #section-buttons>li>a {
-  box-shadow: inset 0 0 0 0 #000000;
+  box-shadow: inset 0 0 0 1 #000000;
   color: #000000;
   transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
   text-decoration: none;
+  letter-spacing: 3px;
 }
 
 
 #section-buttons>li>a:hover {
-  box-shadow: inset 100px 0 0 0 #000000;
+  box-shadow: inset 125px 0 0 0 #000000;
   color: white;
   text-decoration: none;
+  letter-spacing: 3px;
 }
 
 
@@ -80,8 +84,8 @@ a:visited {
 
 
 #appointment-buttons {
-  width: 100px;
   display: flex;
+  width: 100px;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -122,15 +126,16 @@ a:visited {
 
 
 /* WELCOME SECTION */
+
 #welcome-section {
-  background-color: rgb(214, 214, 214);
-  background-image: url('../src/images/welcome-backdrop.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(214, 214, 214);
+  background-image: url('../src/images/welcome-backdrop.jpg');
+  background-size: cover;
 }
 
 #panchos-description {
@@ -139,19 +144,20 @@ a:visited {
   font-size: 8rem;
   color: rgb(32, 32, 32);
   user-select: none;
+  letter-spacing: 10px;
 }
 
 @media screen and (max-width: 1000px) {
   #welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
     background-color: rgb(214, 214, 214);
     background-image: url('../src/images/welcome-backdrop.jpg');
     background-size: cover;
     background-position: 25% 75%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   #panchos-description {
@@ -170,14 +176,14 @@ a:visited {
 /* SERVICES SECTION */
 
 #our-services-section {
-  background-color: rgb(26, 26, 26);
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   text-align: center;
+  background-color: rgb(26, 26, 26);
 }
 
 #our-services-section-title {
@@ -192,8 +198,8 @@ a:visited {
 
 #our-services-description {
   width: 70%;
-  color: #e6e6e6;
   padding: 30px;
+  color: #e6e6e6;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -229,12 +235,13 @@ a:visited {
   text-overflow: upright;
   color: #e6e6e6;
   text-shadow: 5px 5px 5px black;
+  letter-spacing: 5px;
   user-select: none;
 
 }
 
 .service-price {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   color: #f8ce73;
 }
@@ -260,8 +267,8 @@ a:visited {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: rgb(15, 15, 15);
     padding: 5px;
+    background-color: rgb(15, 15, 15);
   }
 
   .service-card>img {
@@ -276,6 +283,7 @@ a:visited {
     text-overflow: upright;
     color: #e6e6e6;
     text-shadow: none;
+    letter-spacing: normal;
   }
 
 
@@ -285,15 +293,15 @@ a:visited {
 /* BARBERS SECTION */
 
 #our-barbers-section {
-  background-color: black;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  width: 100%;
+  height: 100%;
   padding-bottom: 30px;
+  background-color: black;
+  text-align: center;
 }
 
 #our-barbers-section-title {
@@ -324,10 +332,10 @@ a:visited {
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  background-color: black;
   height: 100%;
   width: 40%;
+  text-align: center;
+  background-color: black;
 }
 
 .barber-select-button {
