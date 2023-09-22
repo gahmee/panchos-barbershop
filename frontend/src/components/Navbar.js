@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Navbar = ({ isDesktop }) => {
+const Navbar = ({ isDesktop, setToggleHamburgerMenu }) => {
 
     return (
         <div className="navbar">
+
             <ul className="nav-buttons" id="section-buttons">
                 <li> <a href="#our-services-section">Services</a></li>
                 <li><a href="#our-barbers-section">Barbers</a></li>
@@ -21,11 +22,12 @@ const Navbar = ({ isDesktop }) => {
                 </a>
 
             </div>}
-            {/* <div>
-                <Link to="/login" >Login</Link>
-                <Link to="/signup" >Sign Up</Link>
-                <Link to="/bookappointment" >Book Appointment</Link>
-            </div> */}
+            {!isDesktop &&
+                <button id="hamburger-menu-button" onClick={() => setToggleHamburgerMenu(true)}>
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </button>}
         </div>
     )
 }
