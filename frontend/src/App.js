@@ -1,9 +1,10 @@
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import BookAppointment from "./pages/BookAppointment";
 import HamburgerMenu from "./components/HamburgerMenu";
 import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion"
+
 
 
 function App() {
@@ -22,10 +23,21 @@ function App() {
   return (
     <div className="App">
       <Navbar isDesktop={isDesktop} setToggleHamburgerMenu={setToggleHamburgerMenu} />
-      {toggleHamburgerMenu && <HamburgerMenu setToggleHamburgerMenu={setToggleHamburgerMenu} />}
+      <AnimatePresence >
+        {toggleHamburgerMenu && (
+          <motion.div
+            className="hamburger-menu-wrapper"
+            initial={{ x: 200, opacity: 0 }}
+            transition={{ ease: "linear", duration: 0.1 }}
+            animate={{ x: 0, opacity: 1, bounce: 0 }}
+            exit={{ x: 300, opacity: 0 }}
+          >
+            <HamburgerMenu setToggleHamburgerMenu={setToggleHamburgerMenu} />
+          </motion.div>
+        )}
+      </AnimatePresence>
       <Routes>
         <Route path="/" element={<Home isDesktop={isDesktop} />} />
-        <Route path="/bookappointment" element={<BookAppointment />} />
       </Routes>
     </div>
   );

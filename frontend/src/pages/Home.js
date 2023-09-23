@@ -7,8 +7,6 @@ import Footer from "../components/home/Footer"
 
 const Home = ({ isDesktop }) => {
 
-
-
     return (
         <div>
             <Welcome isDesktop={isDesktop} />
