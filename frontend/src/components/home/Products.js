@@ -13,11 +13,36 @@ const Products = () => {
                 SOLD HERE
             </div>
             <div id="product-container">
-                <motion.img viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { duration: .5 } }} className="product-picture" src={blacktop}></motion.img>
-                <motion.img viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .2, duration: .5 } }} className="product-picture" src={classic}></motion.img>
-                <motion.img viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .4, duration: .5 } }} className="product-picture" src={fiber}></motion.img>
-                <motion.img viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .6, duration: .5 } }} className="product-picture" src={gel}></motion.img>
+                <motion.img
+                    viewport={{ once: true, amount: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { duration: .5 } }}
+                    className="product-picture"
+                    src={blacktop}>
+                </motion.img>
+                <motion.img
+                    viewport={{ once: true, amount: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                        opacity: 1, transition: { delay: .2, duration: .5 }
+                    }}
+                    className="product-picture"
+                    src={classic}>
+                </motion.img>
+                <motion.img
+                    viewport={{ once: true, amount: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { delay: .4, duration: .5 } }}
+                    className="product-picture" src={fiber}>
+                </motion.img>
+                <motion.img
+                    viewport={{ once: true, amount: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { delay: .6, duration: .5 } }}
+                    className="product-picture" src={gel}>
+                </motion.img>
             </div>
+
 
         </div>
     )

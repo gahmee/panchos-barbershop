@@ -16,17 +16,32 @@ const OurServices = () => {
             </div>
 
             <div id="services-card-container">
-                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .3, duration: 1 } }} className="service-card">
+                <motion.div
+                    viewport={{ once: true, amount: 0.5 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { duration: .5 } }}
+                    className="service-card"
+                >
                     <img src={haircut} alt="haircut"></img>
                     <div className='service-name'>HAIRCUT</div>
                     <div className='service-price'>$60</div>
                 </motion.div >
-                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .6, duration: 1 } }} className="service-card">
+                <motion.div
+                    viewport={{ once: true, amount: 0.5 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { delay: .3, duration: .5 } }}
+                    className="service-card"
+                >
                     <img src={hairdye} alt="haircut"></img>
                     <div className='service-name'>HAIR DYE</div>
                     <div className='service-price'>$80</div>
                 </motion.div >
-                <motion.div viewport={{ once: true }} initial={{ opacity: 0 }} whileInView={{ opacity: 1, transition: { delay: .9, duration: 1 } }} className="service-card">
+                <motion.div
+                    viewport={{ once: true, amount: 0.5 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1, transition: { delay: .6, duration: .5 } }}
+                    className="service-card"
+                >
                     <img src={shave} alt="haircut"></img>
                     <div className='service-name'>SHAVE</div>
                     <div className='service-price'>$20</div>

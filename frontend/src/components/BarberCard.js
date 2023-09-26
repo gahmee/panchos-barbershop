@@ -4,10 +4,10 @@ import { motion } from "framer-motion"
 const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber, name, picture, description }) => {
     return (
         <motion.div
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             initial={{ opacity: 0, y: 250 }}
             whileInView={{ opacity: 1, y: 0 }}
-
+            className='barber-card'
         >
             <h3 className="barber-name">{name}</h3>
             <div className="barber-container">
