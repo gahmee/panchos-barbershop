@@ -9,6 +9,10 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -194,6 +198,9 @@ a:visited {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.2rem;
 }
+
+
+
 
 
 .book-appointment-button:hover {
@@ -424,15 +431,6 @@ a:visited {
   height: 90%;
 }
 
-/* .barber-card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  width: 40%;
-  text-align: center;
-  border-radius: 100px;
-} */
 
 .barber-select-button {
   padding: 15px;

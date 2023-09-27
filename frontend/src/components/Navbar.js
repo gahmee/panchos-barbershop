@@ -16,9 +16,9 @@ const Navbar = ({ isDesktop, setToggleHamburgerMenu }) => {
             {isDesktop && <div className="nav-buttons" id="appointment-buttons">
 
                 <a href="#our-barbers-section">
-                    <button className="book-appointment-button">
-                        BOOK NOW
-                    </button>
+                    <div>
+                        <button className="book-appointment-button">Book Now</button>
+                    </div>
                 </a>
 
             </div>}

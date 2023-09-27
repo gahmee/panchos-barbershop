@@ -22,9 +22,11 @@ const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber,
                             {description}
                         </p>
                     </div>
-                    <div>
-                        <button className="book-appointment-button">Book Appointment</button>
-                    </div>
+                    <a href="https://www.square.com" target="_blank" rel="noopener noreferrer">
+                        <div>
+                            <button className="book-appointment-button">Book Appointment</button>
+                        </div>
+                    </a>
                 </div>
             </div>
 
