@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const OurServices = () => {
     return (
-        <div id="our-services-section">
+        <section id="our-services-section">
             <div id='our-services-section-title'>
                 Our Services
             </div>
@@ -22,7 +22,7 @@ const OurServices = () => {
                     whileInView={{ opacity: 1, transition: { duration: .5 } }}
                     className="service-card"
                 >
-                    <img src={haircut} alt="haircut"></img>
+                    <img src={haircut} alt="man getting a haircut"></img>
                     <div className='service-name'>HAIRCUT</div>
                     <div className='service-price'>$60</div>
                 </motion.div >
@@ -32,7 +32,7 @@ const OurServices = () => {
                     whileInView={{ opacity: 1, transition: { delay: .3, duration: .5 } }}
                     className="service-card"
                 >
-                    <img src={hairdye} alt="haircut"></img>
+                    <img src={hairdye} alt="hair being dyed"></img>
                     <div className='service-name'>HAIR DYE</div>
                     <div className='service-price'>$80</div>
                 </motion.div >
@@ -42,13 +42,13 @@ const OurServices = () => {
                     whileInView={{ opacity: 1, transition: { delay: .6, duration: .5 } }}
                     className="service-card"
                 >
-                    <img src={shave} alt="haircut"></img>
+                    <img src={shave} alt="a man being shaved"></img>
                     <div className='service-name'>SHAVE</div>
                     <div className='service-price'>$20</div>
                 </motion.div >
             </div>
 
-        </div>
+        </section>
     )
 }
 

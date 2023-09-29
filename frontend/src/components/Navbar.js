@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
+
 
 const Navbar = ({ isDesktop, setToggleHamburgerMenu }) => {
 
     return (
-        <div className="navbar">
+        <nav className="navbar">
 
             <ul className="nav-buttons" id="section-buttons">
                 <li> <a href="#our-services-section">Services</a></li>
@@ -11,7 +11,7 @@ const Navbar = ({ isDesktop, setToggleHamburgerMenu }) => {
                 <li><a href="#products-section">Products</a></li>
             </ul>
             <div className="nav-buttons" id="home-button">
-                <Link to="/" ><h1>Pancho's</h1></Link>
+                <a href="#welcome-section"><h1>Pancho's</h1></a>
             </div>
             {isDesktop && <div className="nav-buttons" id="appointment-buttons">
 
@@ -28,7 +28,7 @@ const Navbar = ({ isDesktop, setToggleHamburgerMenu }) => {
                     <div className="bar2"></div>
                     <div className="bar3"></div>
                 </button>}
-        </div>
+        </nav>
     )
 }
 

@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import BarberCard from '../BarberCard'
-import { motion } from "framer-motion"
 
 import barberOnePicture from '../../images/barbers/barber.jpg'
 import barberTwoPicture from '../../images/barbers/barber2.jpg'
@@ -54,7 +53,7 @@ const OurBarbers = ({ isDesktop }) => {
     }
 
     return (
-        <div id="our-barbers-section">
+        <section id="our-barbers-section">
             <div className="section-wrapper">
                 <div id="our-barbers-section-title">MEET OUR BARBERS</div>
 
@@ -84,7 +83,7 @@ const OurBarbers = ({ isDesktop }) => {
 
 
 
-        </div>
+        </section>
     )
 }
 

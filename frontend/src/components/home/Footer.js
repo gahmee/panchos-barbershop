@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div id="footer">
+        <section id="footer">
             <div id="business-info-container">
                 <div className="footer-info-title">LOCATION</div>
                 <div>
@@ -33,7 +33,7 @@ const Footer = () => {
                 FOLLOW US [INSTAGRAM]
             </div>
 
-        </div>
+        </section>
     )
 }
 

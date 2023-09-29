@@ -7,9 +7,9 @@ import { motion } from "framer-motion"
 
 const Products = () => {
     return (
-        <div id="products-section">
+        <section id="products-section">
             <div id="product-section-title">
-                <img src={imperialLogo}></img>
+                <img alt="imperial pomade products logo" src={imperialLogo}></img>
                 SOLD HERE
             </div>
             <div id="product-container">
@@ -18,7 +18,9 @@ const Products = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, transition: { duration: .5 } }}
                     className="product-picture"
-                    src={blacktop}>
+                    src={blacktop}
+                    alt="imperial blacktop pomade"
+                >
                 </motion.img>
                 <motion.img
                     viewport={{ once: true, amount: 1 }}
@@ -27,24 +29,30 @@ const Products = () => {
                         opacity: 1, transition: { delay: .2, duration: .5 }
                     }}
                     className="product-picture"
-                    src={classic}>
+                    src={classic}
+                    alt="imperial classic pomade"
+                >
                 </motion.img>
                 <motion.img
                     viewport={{ once: true, amount: 1 }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, transition: { delay: .4, duration: .5 } }}
-                    className="product-picture" src={fiber}>
+                    className="product-picture" src={fiber}
+                    alt="imperial fiber pomade"
+                >
                 </motion.img>
                 <motion.img
                     viewport={{ once: true, amount: 1 }}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1, transition: { delay: .6, duration: .5 } }}
-                    className="product-picture" src={gel}>
+                    className="product-picture" src={gel}
+                    alt="imperial gel pomade"
+                >
                 </motion.img>
             </div>
 
 
-        </div>
+        </section>
     )
 }
 

@@ -11,7 +11,11 @@ const HamburgerMenu = ({ setToggleHamburgerMenu }) => {
                 <li> <a href="#our-services-section">Services</a></li>
                 <li><a href="#our-barbers-section">Barbers</a></li>
                 <li><a href="#products-section">Products</a></li>
-                <button className="book-appointment-button">Book Appointment</button>
+                <a href="https://www.square.com" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <button className="book-appointment-button">Book Appointment</button>
+                    </div>
+                </a>
             </ul>
         </nav>
     )
