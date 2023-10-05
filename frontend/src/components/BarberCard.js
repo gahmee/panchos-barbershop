@@ -13,7 +13,7 @@ const BarberCard = ({ isDesktop, handleSelectPreviousBarber, handleSelectBarber,
             <div className="barber-container">
                 <div className="barber-header">
                     {!isDesktop && <button className="barber-select-button" onClick={() => handleSelectPreviousBarber()}>{`<`}</button>}
-                    <img className="barber-picture" alt={`${name} cutting hair`} src={picture}></img>
+                    <img className="barber-picture" alt={`${name} cutting hair`} loading="lazy" src={picture}></img>
                     {!isDesktop && <button className="barber-select-button" onClick={() => handleSelectBarber()}>{`>`}</button>}
                 </div>
                 <div className="barber-description">
