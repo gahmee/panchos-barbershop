@@ -19,96 +19,6 @@ code {
     monospace;
 }
 
-/* HAMBURGER MENU */
-
-.hamburger-menu {
-  position: fixed;
-  right: 0;
-  width: 50vw;
-  height: 100vh;
-  z-index: 1;
-  background-color: #e6e6e6;
-  border: none;
-}
-
-.hamburger-menu-wrapper {
-  position: fixed;
-  right: 0;
-  width: 50vw;
-  height: 100vh;
-  z-index: 1;
-  background-color: #e6e6e6;
-  border: none;
-}
-
-#mobile-section-buttons {
-  display: flex;
-  flex-direction: column;
-  height: 70%;
-}
-
-#hamburger-menu-button {
-  all: unset;
-  width: 100px;
-  height: 200px;
-  margin-right: 20px;
-
-}
-
-#close-button {
-  all: unset;
-  display: flex;
-  flex-direction: end;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  font-size: 2rem;
-  color: #e6e6e6;
-  background-color: black;
-}
-
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 100%;
-  height: 10px;
-  background-color: #333;
-  margin: 15px 0;
-}
-
-
-#mobile-section-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  gap: 50px;
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 5rem;
-  margin-right: auto;
-}
-
-
-
-#mobile-section-buttons>li>a {
-  box-shadow: inset 0 0 0 1 #000000;
-  color: #000000;
-  transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
-  text-decoration: none;
-  letter-spacing: 3px;
-}
-
-
-#mobile-section-buttons>li>a:hover {
-  box-shadow: inset 125px 0 0 0 #000000;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
-}
 
 /* NAVBAR */
 
@@ -200,6 +110,11 @@ a:visited {
   border-radius: 5px;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.2rem;
+  color: #000000;
+}
+
+.book-appointment-button>a {
+  color: inherit;
 }
 
 
@@ -229,7 +144,105 @@ a:visited {
     font-size: 2.5rem;
   }
 
+  .book-appointment-button:hover {
+    background-color: #db9d17;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
 
+
+}
+
+
+/* HAMBURGER MENU */
+
+.hamburger-menu {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #e6e6e6;
+  border: none;
+}
+
+.hamburger-menu-wrapper {
+  position: fixed;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: #e6e6e6;
+  border: none;
+}
+
+#mobile-section-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+#hamburger-menu-button {
+  all: unset;
+  width: 100px;
+  height: 200px;
+  margin-right: 20px;
+
+}
+
+#close-button {
+  all: unset;
+  display: flex;
+  flex-direction: end;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  color: #e6e6e6;
+  background-color: black;
+}
+
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 10px;
+  background-color: #333;
+  margin: 15px 0;
+}
+
+
+#mobile-section-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 5rem;
+  margin-right: auto;
+}
+
+
+
+#mobile-section-buttons>li>a {
+  box-shadow: inset 0 0 0 1 #000000;
+  color: #000000;
+  transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+
+#mobile-section-buttons>li>a:hover {
+  box-shadow: inset 125px 0 0 0 #000000;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
 }
 
 
